@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+    background: #022333;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    background: #022333;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,.navbar a.aktif{
+    color: #8FD9FB;
+}
+
+.hakkimda{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hakkimda-cont{
+    max-width: 600px;
+}
+
+.hakkimda-cont h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    color: #8FD9FB;
+    line-height: 1.2;
+}
+
+.hakkimda-cont h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+    background: #022333;
+
+}
+
+.hakkimda-cont h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: lightcoral;
+}
+
+
+.hakkimda-cont p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.hakkimda-cont p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+    background: #022333;
+
+}
+
+
+
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
+
